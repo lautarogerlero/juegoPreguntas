@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz@0,9..144;1,9..144&family=Merriweather&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>Preguntas y Respuestas</title>
+</head>
+<body>
+    
+    <section>
+        <div class="container-login">
+            <h1>INICIAR SESIÓN</h1>
+            <form id="form-login">
+                <input type="text" name="user" id="user" placeholder="User">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <div class="buttons">
+                    <button id="login">Login</button>
+                    <button id="register">Register</button>
+                </div>
+                <button id="recuperar-pswd">Olvidé mi contraseña</button>
+            </form>
+            
+            <div id="div-register">
+                <form id="form-register">
+                    <h3>Cree su usuario</h3>
+                    <input type="email" name="email" id="inputEmail" placeholder="Mail">
+                    <input type="text" name="user" id="inputUser" placeholder="User">
+                    <input type="password" name="password" id="inputPassword" placeholder="Password">
+                    <input type="submit" value="Register" id="input-submit">
+                    <button type="button" id="closeRegister">Cerrar</button>
+                </form>
+            </div>
+            
+            <div id="new-pswd">
+                <input type="email" name="email" id="recuperarEmail" placeholder="Ingrese su mail">
+                <input type="password" name="password" id="recuperarPassword" placeholder="Ingrese su contraseña">
+                <input type="password" name="password" id="confirmPassword" placeholder="Confirme su contraseña">
+                <button id="cambiar-pswd">Cambiar Contraseña</button>
+                <button type="button" id="closeCambiarPswd">Cerrar</button>
+            </div>
+        
+        </div>
+    </section>
+    
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/login.js"></script>
+
+</body>
+</html>

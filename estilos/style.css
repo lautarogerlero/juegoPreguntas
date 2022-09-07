@@ -1,0 +1,185 @@
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e4702e;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+section {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+/* ESTILOS LOGIN */
+.container-login {
+    margin-top: 1em;
+    background-color: #e2e2e2;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 2em;
+    height: max-content;
+}
+
+.container-login h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+#form-login input {
+    border-style: none;
+    border-bottom: 1px solid #1b323b;
+    width: 80%;
+    text-align: center;
+    padding: 0.5em 0em; 
+}
+
+.buttons {
+    display: flex;
+    gap: 2em;
+}
+
+button {
+    background-color: #e4d01c;
+    padding: 1em 1.5em;
+    border: 1px solid #e4d01c;
+    border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+#div-register {
+    margin-top: 1em;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+#form-register {
+    min-width: 15em;
+    width: 80%;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-register input {
+    border-style: none;
+    border-bottom: 1px solid #1b323b;
+    width: 80%;
+    text-align: center;
+    padding: 0.5em 0em; 
+}
+
+#input-submit, #closeRegister, #closeCambiarPswd {
+    background-color: #e4d01c;
+    padding: 1em 1.5em;
+    border-bottom: none;
+    border: 1px solid #e4d01c;
+    border-radius: 15px;
+}
+
+#input-submit:hover, #closeRegister:hover, #closeCambiarPswd:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+#closeRegister {
+    width: 50%;
+}
+
+#recuperarEmail {
+    width: 30em;
+    text-align: center;
+}
+
+#new-pswd {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    display: none;
+}
+
+#new-pswd input {
+    border-style: none;
+    border-bottom: 1px solid black;
+    min-width: 15em;
+    width: 80%;
+    text-align: center;
+    padding: 0.5em 0em;
+}
+
+/* ESTILOS JUEGO */
+
+.tituloJuego {
+    text-align: center;
+    margin: 1em;
+}
+
+.seccionJuego {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.divJuego {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+#divPreguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    height: 60vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+#divPreguntas div {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.botonOpcion{
+    width: 60%;
+    padding: 1em 0em 1em 0em;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 18px;
+}
+
+.botonOpcion:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+@media only screen and (min-width: 576px) {
+
+}
