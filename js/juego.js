@@ -87,7 +87,7 @@ verResultado.onclick = () => {
 const showCounter = document.getElementById("counter");
 
 function updateCounter() {
-    let counter = 120;
+    let counter = 180;
     const i = setInterval(() => {
         showCounter.innerText = counter;
         counter--;
